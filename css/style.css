@@ -440,35 +440,35 @@ article {
 }
 
 .red_chair {
-  border: 1px solid red;
   margin-right: 60px;
-  margin-top: -30px;
+  margin-top: -20px;
   width: 400px;
-  height: 500px;
   float: right;
   display: inline-block;
 }
 .red_chair img {
-  padding-left: 40px;
+  padding-left: 50px;
 }
-[type="checkbox"]  {
-  border: 1px solid #24BA9f;
+.checkbox img {
+  padding: 5px;
   width: 50px;
   height: 50px;
-  padding-top: -30px;
-  display: inline-block;
-
-
+  border: 1px solid #90EAD9;
+  float: left;
+  margin-right: 10px;
 }
+
 .checkbox {
   font-size: 22px;
   color: silver;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  margin-left: 80px;
-
+  margin-top: 40px;
+  margin-bottom: 34px;
+  margin-left: 20px;
+  position: relative;
 }
-
+[value="zgoda"] {
+  display: none;
+}
 [type="submit"] {
   width: 370px;
   height: 70px;
@@ -480,15 +480,12 @@ article {
   font-family: Raleway, sans-serif;
   font-weight: 600;
   margin-left: 20px;
-
 }
 
 form {
   margin-left: 60px;
-  margin-top: -50px;
+  margin-top: -30px;
   width: 55%;
-  border: 1px solid red;
-
 }
 
 form input {
@@ -513,5 +510,37 @@ textarea {
   font-size: 35px;
   font-weight: lighter;
   font-family: Raleway, sans-serif;
+}
 
+/*FOOTER*/
+footer {
+  height: 130px;
+}
+.rights {
+  margin-left: 55px;
+  margin-top: 80px;
+  color: silver;
+  font-size: 17px;
+  letter-spacing: 1px;
+  float: left;
+
+}
+.logos {
+  float: right;
+  margin-top: 60px;
+  margin-right: 60px;
+  color: silver;
+  font-size: 17px;
+  letter-spacing: 1px;
+
+}
+.logos a:last-child {
+  margin-left: 70px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: silver;
+  text-decoration: none;
+}
+.logos  span {
+  color: silver;
 }
