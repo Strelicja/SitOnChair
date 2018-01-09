@@ -5,10 +5,214 @@
   <title>SitOnChair</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400,700" rel="stylesheet">
 </head>
-<header>
-  <div class="container">
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+             <a href="#" title="Sit on chair!">SIT <span> ON </span> CHAIR </a>
+          </div>
+          <nav class="col-lg-8">
+            <ul>
+              <li class="hover">
+                <a href="#" title="O firmie">O FIRMIE</a>
+                <ul class="submenu">
+                  <!-- <div class="arrow_menu"></div> -->
+                  <li>
+                    <a href="#" title="Aktualności">Aktualności</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Nasz team">Nasz team</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Historia">Historia</a>
+                  </li>
+                </ul>
+              </li>
+             <li>
+               <a href="#" title="Galeria">GALERIA</a>
+             </li>
+             <li>
+               <a href="#" title="Kontakt">KONTAKT</a>
+             </li>
+           </ul>
+          </nav> 
+        </div>
+      </div>
+    </header>
+
+    <section class="slider container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="images/black_chair.png" title="Black Chair">
+        </div>
+        <div class="col-lg-8">
+          <h1>
+            SIT <span> ON </span>OUR <span> CHAIR </span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+          </p>
+          <div>
+            <a href="#" title="Read More" target="_blank">ZOBACZ WIĘCEJ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer container">
+      <div class="row">
+        <div class="offer_box">
+          <div>
+            <img src="images/box1_img.jpg" title="chair clair">
+            <div class="lighter">
+              <p class="">Chair CLAIR</p>
+            </div>
+          </div>
+          <div>
+           <img src="images/box2_img.jpg" title="chair margarita">
+           <div class="lighter">
+              <p class="">
+               Chair MARGARITA
+              </p>
+            </div>
+          </div>
+          <div>
+              <p class="">Finds all inputs</p>
+              <p class="">
+               Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
+              </p>
+              <p class="">
+               Vestibulum commodo volutpat a, laoreet enim. Phasellus fermentum in, dolor.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing container">
+      <div class="row">
+        <div>
+          <p class="" >CENNIK</p>
+        </div>
+        <div class="pricing_box">
+          <div class="pricing_box pricing_box_1">
+            <div class="two_circles">
+              <span class="circle_large"></span>
+              <span class="circle_small"></span>
+            </div>
+            <h1 class="pricing_h1">BASIC PLAN</h1>
+            <div class="circle_pln">
+              <div class="price">
+                <p>85<span>99</span><br></p>
+              </div>
+              <div class="term">
+                <p>PLN/MSC</p>
+              </div>
+            </div>
+            <ul class="pricing_product pricing_product_1">
+               <li>Zakup towaru + dowóz</li>
+               <li>Serwis</li>
+            </ul>
+            <div class="pricing_button">
+              <a href="#" title="dołącz" target="_blank">DOŁĄCZ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing_box pricing_box_2" id="pricing_box_blue">
+          <div class="two_circles">
+            <span class="circle_large" id="circle_large_blue"></span>
+            <span class="circle_small" id="circle_small_blue"></span>
+          </div>
+          <h1 class="pricing_h1" id="pricing_h1_blue">STANDARD PLAN</h1>
+          <div class="circle_pln blue">
+            <p id="circle_pln_blue_p">95<span>99</span><br></p>
+            <p id="circle_pln_blue_term">PLN/MSC</p>
+          </div>
+          <ul class="pricing_product pricing_product_2">
+            <li>Zakup towaru + dowóz</li>
+            <li id="pricing_blue_li">Serwis</li>
+            <li>Gwarancja 5 lat</li>
+          </ul>
+          <div class="pricing_button pricing_button_blue">
+            <a href="#" title="dołącz" target="_blank">DOŁĄCZ</a>
+          </div>
+        </div>  
+        
+        <div class="pricing_box pricing_box_3">
+          <div class="two_circles">
+            <span class="circle_large"></span>
+            <span class="circle_small"></span>
+          </div>
+          <h1 class="pricing_h1">ADVANCE PLAN</h1>
+          <div class="circle_pln">
+            <div class="price">
+              <p>211<span>00</span><br></p>
+            </div>
+            <div class="term">
+              <p>PLN/MSC</p>
+            </div>
+          </div>
+          <ul class="pricing_product pricing_product_1">
+            <li>Zakup towaru + dowóz</li>
+            <li id="pricing_product_smoke">Serwis</li>
+            <li id="pricing_product_grey">Gwarancja 6 lat</li>
+            <li>Porady projektanta</li>
+          </ul>
+          <div class="pricing_button">
+            <a href="#" title="dołącz" target="_blank">DOŁĄCZ</a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <section class="contact container">
+      <div class="row">
+        <div>
+          <p class="" >KONTAKT</p>
+        </div>
+        <div class="form_box">
+          <form>
+            <input name="" type="text" maxlength="10" placeholder="Imię">
+            <input name="" type="text" maxlength="10" placeholder="email">
+            <textarea name="message" placeholder="Wiadomość"></textarea>
+          </form>
+          <div>
+            <img src="images/red_chair.png" title="image"/>
+            <div class="checkbox">
+              <input type="checkbox" name="nazwa" value="zgoda" id="agree">
+              <label for="agree">Zgadzam się na przetwarzanie danych osobowych</label>
+            </div>
+            <input type="submit" value="WYŚLIJ">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="rights">Copyright 2014 | All Rights Reserved. - Sit On Chair</div>
+        <div class="logos">
+          <a href="#" title="flickr"><img src="images/flickr.png" title="flickr"/></a>
+          <a href="#" title="vimeo"><img src="images/vimeo.png" title="vimeo"/></a>
+          <a href="#" title="pinterest"><img src="images/pinterest.png" title="pinterest"/></a>
+          <a href="#" title="twitter"><img src="images/twitter.png" title="twitter"/></a>
+          <a href="#" title="logo">SIT<span> ON </span>CHAIR</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+<!-- 
+<header>  -->
+  <!-- <div class="container">
     <div class="floatLeft logo">
       <p>
         <a href="#" title="Sit on chair!">SIT <span> ON </span> CHAIR </a>
@@ -80,8 +284,6 @@
     <p class="text_offer_large">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
     <p class="text_offer_large2">Vestibulum commodo volutpat a, laoreet enim. Phasellus fermentum in, dolor.</p>
   </div>
-
-
 </section>
 <section class="container pricing">
   <div class="pricing_title">
@@ -182,6 +384,6 @@
     <a href="#" title="twitter"><img src="images/twitter.png" title="twitter"/></a>
     <a href="#" title="logo">SIT<span> ON </span>CHAIR</a>
   </div>
-</footer>
+</footer> -->
 </body>
 </html>
