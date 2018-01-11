@@ -1,6 +1,4 @@
 /*GLOBAL*/
-//***** MEDIA *****//
-
 
 
 * {
@@ -17,7 +15,7 @@ span {
 /*HEADER*/
 
 header {
-  background-color: black;
+  background-color: black; 
 }
 header a {
   text-decoration: none;
@@ -380,9 +378,9 @@ nav > ul > li a:hover,
   background-color: #24BA9f;
   width: 130px;
   height: 35px;
-  // position: absolute;
+  position: absolute;
   bottom: 20px;
-  // left: 100px;
+  left: calc(50% - 61px);
   text-align: center;
   font-size: 16px;
   padding: 7px;
@@ -410,7 +408,7 @@ nav > ul > li a:hover,
   width: 400px;
   float: right;
   display: inline-block;
-}
+} 
 .red_chair img {
   padding-left: 50px;
 }
@@ -472,9 +470,9 @@ textarea {
   padding-top: 15px;
   opacity: 0.5;
   border: 1px solid #24BA9f;
-  font-size: 35px;
-  font-weight: lighter;
-  font-family: Raleway, sans-serif;
+  font-size: 35px!important;
+  font-weight: lighter!important;
+  font-family: Raleway, sans-serif!important;
 }
 
 
