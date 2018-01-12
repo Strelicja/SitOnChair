@@ -42,6 +42,17 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     
+//DEVICES APPLE //
+function is_iPhone_or_iPad(){
+     return navigator.platform.match(/i(Phone|Pad)/i)
+}
+
+if (is_iPhone_or_iPad()) {
+$('html').addClass('ipad');
+$('.slider_box').css('display', 'block');
+// $('.productCarouselContainer h2').css('position', 'relative');
+// $('.productCarouselContainer .buttonHome').css('margin', '10px auto 0');
+}
 
 
 

@@ -1,4 +1,6 @@
 /*GLOBAL*/
+
+
 * {
   box-sizing: border-box;
   font-family: Raleway, sans-serif;
@@ -89,10 +91,9 @@ nav > ul > li a:hover,
   }
   
 }
-.slider_box {
-  display: flex;
-  flex-wrap: wrap;
-
+.slider_box {     
+  // display: flex;
+  // flex-wrap: wrap;
 }
 .slider_text {
   display: flex;
@@ -100,6 +101,7 @@ nav > ul > li a:hover,
   align-content: center;
   justify-content: center;
   text-align: center;
+  padding: 90px 0 ;
   h1,
   p {
   padding-bottom: 10px;
@@ -115,7 +117,7 @@ nav > ul > li a:hover,
 }
 .slider_box .button {
   color: white;
-  font-size: 20px;
+  font-size: rem(20px);
   text-align: center;
   text-decoration: none;
   padding-top: 15px;
@@ -128,7 +130,12 @@ nav > ul > li a:hover,
   a {
   color: white;
   }
+  a:hover {
+  text-decoration: none;
+  color: silver;
+  }
 }
+
 .arrow_left{
     float: left;
 }
@@ -154,15 +161,25 @@ nav > ul > li a:hover,
 .lighter{
   width: 100%;
   height: 65px;
-  position: absolute;
   margin-top: -80px;
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.lighter:hover {
+  .text_underline {   
+  border-bottom: 7px solid#24BA0f;
+  }
+}
+.offer_product_box:hover {
+  .text_underline {   
+  border-bottom: 7px solid#24BA0f;
+  }
 }
 .text_lighter {
   margin-left: 25px;
 }
 .text_underline {
-  font-size: 15px;
+  font-size: rem(15px);
   font-weight: 600;
   width: 140px;
   border-bottom: 7px solid #24BA9f;
@@ -175,7 +192,7 @@ nav > ul > li a:hover,
 
 .offer_product_text {
   color: grey;
-  font-size: 14px;
+  font-size: rem(14px);
   line-height: 22px;
   padding-top: 12px;
 }
@@ -208,11 +225,16 @@ nav > ul > li a:hover,
 //PRICING//
 
 .pricing {
-  height: 700px;
+  height: 100%;
   background: WhiteSmoke;
   margin-top: 20px;
   position: relative;
-
+  .pricing_boxes {
+    margin-bottom: 50px;
+  }
+  .pricing_box {
+    margin-bottom: 50px;
+  }
 }
 .price span {
   font-size: 17px;
@@ -328,6 +350,9 @@ nav > ul > li a:hover,
   padding: 25px;
   padding-left: 15px;
 }
+.circle_pln:hover {
+
+}
 .blue {
   background-color: white;
   color: #24BA9f;
@@ -356,7 +381,7 @@ nav > ul > li a:hover,
   padding-left: 10px;
 }
 .term p {
-  font-size: 16px;
+  font-size: rem(16px);
   color: silver;
   text-align: center;
   font-weight: bold;
@@ -366,7 +391,7 @@ nav > ul > li a:hover,
 .pricing_product li {
   height: 45px;
   text-align: center;
-  font-size: 25px;
+  font-size: rem(25px);
   color: grey;
   padding-top: 5px;
 }
@@ -410,10 +435,10 @@ nav > ul > li a:hover,
   bottom: 20px;
   left: calc(50% - 61px);
   text-align: center;
-  font-size: 16px;
+  font-size: rem(16px);
   padding: 7px;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin:-10px auto;
 }
 .pricing_button_blue  {
   background-color: white;
@@ -450,13 +475,14 @@ nav > ul > li a:hover,
 }
 
 .checkbox {
-  font-size: 22px;
+  font-size: rem(22px);
   color: silver;
   margin-top: 40px;
   margin-bottom: 34px;
   position: relative;
   label {
     margin-left: 50px;
+    margin-bottom: 40px!important;
   }
 }
 [value="zgoda"] {
@@ -469,13 +495,14 @@ nav > ul > li a:hover,
   border-radius: 10px;
   border: 1px solid #24BA9f;
   color: white;
-  font-size: 35px;
+  font-size: rem(35px);
   font-family: Raleway, sans-serif;
   font-weight: 600;
 }
 
 form {
   padding-left: 0!important;
+  margin-bottom: 50px
 }
 .form_send img {
   width: 100%;
@@ -483,7 +510,7 @@ form {
 form input {
   border: 3px solid #24BA9f;
   height: 70px;
-  font-size: 35px;
+  font-size: rem(35px);
   font-weight: lighter;
   width: 100%;
   margin-bottom: 25px;
@@ -494,12 +521,12 @@ form input {
 
 textarea {
   width: 100%;
-  height: 200px;
+  height: 315px;
   padding-left: 15px;
   padding-top: 15px;
   opacity: 0.5;
   border: 3px solid #24BA9f;
-  font-size: 35px!important;
+  font-size: rem(35px!important);
   font-weight: lighter!important;
   font-family: Raleway, sans-serif!important;
 }
@@ -536,29 +563,33 @@ textarea:focus {
 //SECTION FOOTER//
 
 .footer_box {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   margin: 80px 60px;
 }
 .rights {
   margin-top: 80px;
   color: silver;
-  font-size: 17px;
+  font-size: rem(17px);
   letter-spacing: 1px;
   float: left;
-
+  margin-bottom: 50px;
 }
 .logos {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   margin-top: 60px;
   color: silver;
-  font-size: 17px;
+  font-size: rem(17px);
+  margin-bottom: 50px;
   letter-spacing: 1px;
-
+  a {
+        margin: 0 5px;
+  }
 }
 .logos a:last-child {
-  margin-left: 70px;
-  font-size: 20px;
+  // margin-left: 70px;
+  font-size: rem(20px);
   letter-spacing: 1px;
   color: silver;
   text-decoration: none;

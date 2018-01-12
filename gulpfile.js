@@ -29,8 +29,8 @@ var server = require('gulp-server-livereload');
 // vars source
 var dir = {
     source: {
-        img: 'src/images/*.{png,jpg,gif}',
-        vendor: ['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'],
+                img: 'src/images/*.{png,jpg,gif}',
+        vendor: ['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'node_modules/skrollr/dist/skrollr.min.js',  'node_modules/jquery-ui/ui/jquery-1-7.js', 'node_modules/jquery-ui/ui/widgets/datepicker.js', 'node_modules/slick-carousel/slick/slick.js', 'src/libs/jquery-ui.js'],
         js: 'src/scripts/main.js',
         scss: 'src/sass/**/*.scss'
 
