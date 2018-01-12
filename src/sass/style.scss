@@ -117,7 +117,7 @@ nav > ul > li a:hover,
 }
 .slider_box .button {
   color: white;
-  font-size: rem(20px);
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   padding-top: 15px;
@@ -179,7 +179,7 @@ nav > ul > li a:hover,
   margin-left: 25px;
 }
 .text_underline {
-  font-size: rem(15px);
+  font-size: 15px;
   font-weight: 600;
   width: 140px;
   border-bottom: 7px solid #24BA9f;
@@ -192,7 +192,7 @@ nav > ul > li a:hover,
 
 .offer_product_text {
   color: grey;
-  font-size: rem(14px);
+  font-size: 14px;
   line-height: 22px;
   padding-top: 12px;
 }
@@ -381,7 +381,7 @@ nav > ul > li a:hover,
   padding-left: 10px;
 }
 .term p {
-  font-size: rem(16px);
+  font-size: 16px;
   color: silver;
   text-align: center;
   font-weight: bold;
@@ -391,9 +391,9 @@ nav > ul > li a:hover,
 .pricing_product li {
   height: 45px;
   text-align: center;
-  font-size: rem(25px);
+  font-size: 20px;
   color: grey;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 
 .pricing_product_1 li:first-child {
@@ -435,10 +435,10 @@ nav > ul > li a:hover,
   bottom: 20px;
   left: calc(50% - 61px);
   text-align: center;
-  font-size: rem(16px);
+  font-size: 16px;
   padding: 7px;
   box-sizing: border-box;
-  margin:-10px auto;
+  margin: -10px auto;
 }
 .pricing_button_blue  {
   background-color: white;
@@ -475,7 +475,7 @@ nav > ul > li a:hover,
 }
 
 .checkbox {
-  font-size: rem(22px);
+  font-size: 22px;
   color: silver;
   margin-top: 40px;
   margin-bottom: 34px;
@@ -495,7 +495,7 @@ nav > ul > li a:hover,
   border-radius: 10px;
   border: 1px solid #24BA9f;
   color: white;
-  font-size: rem(35px);
+  font-size: 25px;
   font-family: Raleway, sans-serif;
   font-weight: 600;
 }
@@ -510,7 +510,7 @@ form {
 form input {
   border: 3px solid #24BA9f;
   height: 70px;
-  font-size: rem(35px);
+  font-size: 25px;
   font-weight: lighter;
   width: 100%;
   margin-bottom: 25px;
@@ -526,7 +526,7 @@ textarea {
   padding-top: 15px;
   opacity: 0.5;
   border: 3px solid #24BA9f;
-  font-size: rem(35px!important);
+  font-size: 25px!important;
   font-weight: lighter!important;
   font-family: Raleway, sans-serif!important;
 }
@@ -570,7 +570,7 @@ textarea:focus {
 .rights {
   margin-top: 80px;
   color: silver;
-  font-size: rem(17px);
+  font-size: 17px;
   letter-spacing: 1px;
   float: left;
   margin-bottom: 50px;
@@ -580,7 +580,7 @@ textarea:focus {
   justify-content: flex-end;
   margin-top: 60px;
   color: silver;
-  font-size: rem(17px);
+  font-size: 17px;
   margin-bottom: 50px;
   letter-spacing: 1px;
   a {
@@ -589,7 +589,7 @@ textarea:focus {
 }
 .logos a:last-child {
   // margin-left: 70px;
-  font-size: rem(20px);
+  font-size: 20px;
   letter-spacing: 1px;
   color: silver;
   text-decoration: none;
