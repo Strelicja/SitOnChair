@@ -85,7 +85,7 @@ nav > ul > li a:hover,
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#E0E0E0',GradientType=0 ); /* ie6-9 */;
 }
 .slider_img {
-  margin: 60px 0;
+  padding: 60px 0;
   img {
     width: 100%;
   }
@@ -108,15 +108,20 @@ nav > ul > li a:hover,
   color: grey;
   }
 }
-
-
+.slider_img ul li {
+  display: none;
+  
+}
+.slider_img ul li:first-child {
+  display: block;
+}
 .slider_box .button {
   color: white;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
   padding-top: 15px;
-  margin-left: 50px;
+  margin-bottom: 50px;
   width: 250px;
   height: 55px;
   background-color: #24BA9f;
@@ -126,7 +131,25 @@ nav > ul > li a:hover,
   color: white;
   }
 }
+.arrow_left{
+    float: left;
+}
 
+.arrow_left {
+    cursor: pointer;
+}
+
+.arrow_right {
+    float: right;
+    cursor: pointer;
+}
+.arrows {
+  font-size: 90px;
+  font-weight: lighter;
+  color: #24BA9f;
+  display: flex;
+    margin-top: 13%;
+}
 
 /*SECTION OFFER*/
 
