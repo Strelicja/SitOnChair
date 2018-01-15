@@ -66,4 +66,49 @@ burger.addEventListener("click", function(){
 
 
 
+
+//ORDER//
+
+var order = document.querySelector('.order');
+
+var order_arrow_name = order.querySelector('.order_arrow.order_name');
+var order_name = order.querySelector('.order_name');
+
+var order_arrow_color = order.querySelector('.order_arrow.order_color');
+var order_color = order.querySelector('.order_color');
+
+var order_arrow_fabric = order.querySelector('.order_arrow.order_fabric');
+var order_fabric = order.querySelector('.order_fabric');
+
+
+ order_arrow_name.addEventListener('click', function() {
+        this.nextElementSibling.classList.toggle('showList');
+        for (var i = 0; i < this.nextElementSibling.children.length; i++) {
+            this.nextElementSibling.children[i].addEventListener('click', function() {
+                order_name.innerHTML = this.innerHTML;
+                
+                
+                
+                
+                this.parentElement.classList.add('showList');
+            });
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

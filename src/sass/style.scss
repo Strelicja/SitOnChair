@@ -218,7 +218,7 @@ nav {
 .text_underline {
   font-size: 15px;
   font-weight: 600;
-  width: 140px;
+  width: 240px;
   border-bottom: 7px solid #24BA9f;
   padding-bottom: 2px;
 }
@@ -259,6 +259,46 @@ nav {
   background-position: center;
 }
 
+
+// ORDER //
+
+.order_box {
+  border: 2px solid  #24BA9f;
+  margin-bottom: 25px;
+  display: flex;
+  position: relative;
+}
+.order>p {
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.order_kind {
+  font-size: 20px;
+  font-weight: 200;
+  color: silver;
+  padding: 20px;
+  margin: 0;
+}
+
+.order_choice {
+  display: none;
+}
+.order_arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #24baa0;
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 28px;
+    cursor: pointer;
+}
+.showList {
+  display: block;
+}
 //PRICING//
 
 .pricing {
