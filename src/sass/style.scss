@@ -72,6 +72,40 @@ nav > ul > li a:hover,
 }
 .hover:hover .submenu {
   display: block;
+  content: "";
+  }
+
+.arrowDown:after {
+  content: "↓";
+  color: white;
+  margin-left: 5px;
+}
+.arrowUp:after {
+  content: "↑";
+  color: white;
+  margin-left: 5px;
+}
+nav {
+  display: none;
+}
+.nav_mobile {
+  ul {
+    float: none;
+  }
+  display: block;
+   ul li {
+    display: block;
+    .submenu {
+      position: relative;
+      height: 100%;
+      li {
+        margin: 0 auto;
+      }
+      a {
+        text-align: left;
+      }
+    }
+  }
 }
 
 /*SECTION SLIDER*/
@@ -605,3 +639,83 @@ textarea:focus {
 .logos  span {
   color: silver;
 }
+
+
+
+
+button.burger {
+  width:60px;
+  height:30px;
+  border:none;
+  background:transparent;
+  position:relative;
+  cursor:pointer;
+  margin:20px;
+  float: right;
+  &:focus {
+    outline:none;
+  }
+}
+.nav_hidden {
+  display: none;
+}
+  
+  
+  //  Menu Burger 1
+  .burger_menu {
+    &:after,
+    &:before,
+    span {
+      width:100%;
+      height:4px;
+      border-radius:100px;
+      position:absolute;
+      left:0px;
+      background:#923cbe;
+      transform:rotate(0deg);
+      transition: all 0.4s;
+    }
+
+    &:after,
+    &:before {
+      content:"";
+    }
+
+    &:after {
+      top:0px;
+      margin-top:0px;
+      
+    }
+
+    &:before {
+      bottom:0px;
+      margin-bottom:0px;
+     }
+
+    span {
+      top:50%;
+      margin-top:-2px;
+      }
+
+    &.on {
+
+      &:after {
+        transform:rotate(135deg)translate(9px,-9px);
+      }
+
+      &:before { 
+        transform:rotate(225deg);
+        bottom:50%;
+        margin-bottom:-2px;
+      }
+
+      span {
+        transform:rotate(135deg);
+      }
+
+    }
+  }
+   
+
+
+

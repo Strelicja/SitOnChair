@@ -41,23 +41,29 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     })
 
-    
-//DEVICES APPLE //
-function is_iPhone_or_iPad(){
-     return navigator.platform.match(/i(Phone|Pad)/i)
-}
+//BURGER MENU //
+let hoverA = document.querySelector(".hover");
+let nav = document.querySelector ("nav");
+let burger = document.querySelector (".burger");
 
-if (is_iPhone_or_iPad()) {
-$('html').addClass('ipad');
-$('.slider_box').css('display', 'block');
-// $('.productCarouselContainer h2').css('position', 'relative');
-// $('.productCarouselContainer .buttonHome').css('margin', '10px auto 0');
-}
+burger.addEventListener("click", function(){
+    burger.classList.toggle("on");
+    nav.classList.toggle("nav_mobile");
+    if (nav.classList.contains("hidden-xs")  ) {
+        nav.classList.remove("hidden-xs");
+        hoverA.classList.add("arrowDown"); 
+      }
+      else {
+         nav.classList.add("hidden-xs");
+          hoverA.classList.remove("arrowDown");   
+      }   
+})
+
+    hoverA.addEventListener("click", function(){
+            hoverA.classList.remove("arrowDown");   
+ 
+ });
 
 
 
-
-
-    });
-
-
+});
