@@ -35,12 +35,15 @@ nav ul {
   padding: 10px;
   margin-right: 50px;
 }
-.logotype a {
+.logotype {
+      margin: 10px 0;
+      a {
   margin: 0 auto;
   padding-top: 10px;
-  position: absolute;
+  // position: absolute;
   margin-left: 50px;
   letter-spacing: 1.5px;
+}
 }
 .submenu {
   display: none;
@@ -423,7 +426,10 @@ nav > ul > li a:hover,
 .pricing_button a {
   text-decoration: none;
   color: white;
-
+}
+.pricing_button a:hover {
+  text-decoration: none;
+  color: silver;
 }
 .pricing_button {
   border: 1px solid #24BA9f;
@@ -499,7 +505,9 @@ nav > ul > li a:hover,
   font-family: Raleway, sans-serif;
   font-weight: 600;
 }
-
+[type="submit"]:hover {
+  color: silver;
+}
 form {
   padding-left: 0!important;
   margin-bottom: 50px
