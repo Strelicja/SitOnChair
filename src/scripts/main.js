@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let nav                 = document.querySelector ("nav");
     let burger              = document.querySelector (".burger");   
 
-    // PRICING //
+    // // PRICING //
     let addPlan            = document.querySelectorAll('.pricing_button_a');
     let addPrice           = document.querySelectorAll('.pricing_h1');
     let orderPricing       = document.querySelector('.order_pricing .order_kind');
@@ -55,7 +55,6 @@ sliderArray();
 
 
 //BURGER MENU //
-
 function burgerMenu() {
     burger.addEventListener("click", function(){
     burger.classList.toggle("on");
@@ -77,12 +76,15 @@ function burgerMenu() {
 burgerMenu();
 
 // PRICING //
-
-// let addPlan            = document.querySelectorAll('.pricing_button_a');
-// let addPrice           = document.querySelectorAll('.pricing_h1');
-// let orderPricing       = document.querySelector('.order_pricing .order_kind');
-
-
+function pricingPlan() {
+     addPlan.forEach(function (item, index, ){
+      item.addEventListener("click", function(){
+        orderPricing.textContent = addPrice[index].textContent;
+      });
+   });
+}
+pricingPlan();
+     
 
 //ORDER//
 
