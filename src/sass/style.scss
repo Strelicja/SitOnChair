@@ -283,6 +283,23 @@ nav {
 
 .order_choice {
   display: none;
+      position: absolute;
+    top: 101%;
+    left: -2px;
+    background-color: #24baa0;
+    padding: 22px;
+    width: 101%;
+    z-index: 9;
+    li {
+      color: white;
+      font-size: 25px;
+      padding-bottom: 15px;
+      cursor: pointer;
+      opacity: .8;
+    }
+    li:hover {
+     opacity: 1;
+    }
 }
 .order_arrow {
     width: 0;
@@ -298,6 +315,9 @@ nav {
 }
 .showList {
   display: block;
+}
+.hideText {
+  display: none;
 }
 //PRICING//
 
@@ -437,13 +457,13 @@ nav {
 }
 
 #circle_pln_blue_p {
-  font-size: 45px;
+  font-size: 33px;
   color: #24BA9f;
   text-align: center;
   font-weight: bold;
 }
 .price p {
-  font-size: 45px;
+  font-size: 33px;
   color: silver;
   text-align: center;
   font-weight: bold;

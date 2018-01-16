@@ -1,50 +1,50 @@
 //
 document.addEventListener("DOMContentLoaded", function() {
-    var arrow_left = document.querySelector('.arrow_left');
-    var arrow_right = document.querySelector('.arrow_right');
-    var chairs_img = document.querySelectorAll('.slider_img ul li'); 
-    var chairs_img_touch = document.querySelectorAll('.slider_img ul li img'); 
+    var arrowLeft          = document.querySelector('.arrow_left');
+    var arrowRight         = document.querySelector('.arrow_right');
+    var chairsImg          = document.querySelectorAll('.slider_img ul li'); 
+    var chairsImgTouch    = document.querySelectorAll('.slider_img ul li img'); 
 
-    var index = 0;
+    var index               = 0;
 
-    chairs_img[index].style.display = "initial";
+    chairsImg[index].style.display = "initial";
 //SLIDER ARROWS - CLICK//
 
-    arrow_left.addEventListener("click", function() {
-        chairs_img[index].style.display = "none";
+    arrowLeft.addEventListener("click", function() {
+        chairsImg[index].style.display = "none";
         index--;
         if (index < 0) {
-            index = chairs_img.length - 1;
+            index = chairsImg.length - 1;
         }
-        chairs_img[index].style.display = "initial";
+        chairsImg[index].style.display = "initial";
     });
 
-    arrow_right.addEventListener("click", function() {
-        chairs_img[index].style.display = "none";
+    arrowRight.addEventListener("click", function() {
+        chairsImg[index].style.display = "none";
         index++;
-        if (index >= chairs_img.length) {
+        if (index >= chairsImg.length) {
             index = 0;
         }
-        chairs_img[index].style.display = "initial";
+        chairsImg[index].style.display = "initial";
     });
 
 //SLIDER MOBILE -TOUCHSTART//
-    chairs_img_touch.forEach(function (item) {
+    chairsImgTouch.forEach(function (item) {
         item.addEventListener('touchstart', function() {
-            chairs_img[index].style.display = "none";
+            chairsImg[index].style.display = "none";
         index--;
         if (index < 0) {
-            index = chairs_img.length - 1;
+            index = chairsImg.length - 1;
         }
-        chairs_img[index].style.display = "initial";
+        chairsImg[index].style.display = "initial";
         console.log('sdf')
         })
     })
 
 //BURGER MENU //
-let hoverA = document.querySelector(".hover");
-let nav = document.querySelector ("nav");
-let burger = document.querySelector (".burger");
+let hoverA              = document.querySelector(".hover");
+let nav                 = document.querySelector ("nav");
+let burger              = document.querySelector (".burger");
 
 burger.addEventListener("click", function(){
     burger.classList.toggle("on");
@@ -64,43 +64,75 @@ burger.addEventListener("click", function(){
  
  });
 
+// PRICING //
 
+let addPlan            = document.querySelectorAll('.pricing_button_a');
+let addPrice           = document.querySelectorAll('.pricing_h1');
+let orderPricing       = document.querySelector('.order_pricing .order_kind');
+
+ // add_plan.addEventListener('click', function() {
+ //        order_pricing.textContent = add_price.textContent; 
+ //    });
+ console.log(addPrice)
+
+        
+addPlan.forEach(function (index){
+  index.addEventListener("click", function(){
+  
+    orderPricing.textContent = addPrice.textContent;
+  console.log(this)
+  });
+});
 
 
 //ORDER//
 
-var order = document.querySelector('.order');
+let order               = document.querySelector('.order');
 
-var order_arrow_name = order.querySelector('.order_arrow.order_name');
-var order_name = order.querySelector('.order_name');
+let orderArrowName    = order.querySelector('.order_arrow.order_name');
+let orderName          = order.querySelector('.order_name');
 
-var order_arrow_color = order.querySelector('.order_arrow.order_color');
-var order_color = order.querySelector('.order_color');
+let orderArrowColor   = order.querySelector('.order_arrow.order_color');
+let orderColor         = order.querySelector('.order_color');
 
-var order_arrow_fabric = order.querySelector('.order_arrow.order_fabric');
-var order_fabric = order.querySelector('.order_fabric');
+let orderArrowFabric  = order.querySelector('.order_arrow.order_fabric');
+let orderFabric        = order.querySelector('.order_fabric');
+
+let orderChoice        = order.querySelector('.order_choice');
+let orderChoiceLi     = order.querySelectorAll('li');
 
 
- order_arrow_name.addEventListener('click', function() {
+
+ orderArrowName.addEventListener('click', function() {
         this.nextElementSibling.classList.toggle('showList');
-        for (var i = 0; i < this.nextElementSibling.children.length; i++) {
+        for (let i = 0; i < this.nextElementSibling.children.length; i++) {
             this.nextElementSibling.children[i].addEventListener('click', function() {
-                order_name.innerHTML = this.innerHTML;
-                
-                
-                
-                
-                this.parentElement.classList.add('showList');
+                orderName.textContent = this.textContent;
+                this.parentElement.classList.remove('showList');
+            });
+        }
+    });
+
+ orderArrowColor.addEventListener('click', function() {
+        this.nextElementSibling.classList.toggle('showList');
+        for (let i = 0; i < this.nextElementSibling.children.length; i++) {
+            this.nextElementSibling.children[i].addEventListener('click', function() {
+                orderColor .textContent = this.textContent;
+                this.parentElement.classList.remove('showList');
             });
         }
     });
 
 
-
-
-
-
-
+ orderArrowFabric.addEventListener('click', function() {
+        this.nextElementSibling.classList.toggle('showList');
+        for (let i = 0; i < this.nextElementSibling.children.length; i++) {
+            this.nextElementSibling.children[i].addEventListener('click', function() {
+                orderFabric.textContent = this.textContent;
+                this.parentElement.classList.remove('showList');
+            });
+        }
+    });
 
 
 
