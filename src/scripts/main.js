@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let arrowLeft          = document.querySelector('.arrow_left');
     let arrowRight         = document.querySelector('.arrow_right');
     let chairsImg          = document.querySelectorAll('.slider_img ul li'); 
-    let chairsImgTouch    = document.querySelectorAll('.slider_img ul li img'); 
+    let chairsImgTouch     = document.querySelectorAll('.slider_img ul li img'); 
 
      //BURGER MENU //
     let hoverA              = document.querySelector(".hover");
@@ -15,6 +15,13 @@ document.addEventListener("DOMContentLoaded", function() {
     let addPlan            = document.querySelectorAll('.pricing_button_a');
     let addPrice           = document.querySelectorAll('.pricing_h1');
     let orderPricing       = document.querySelector('.order_pricing .order_kind');
+
+    //ORDER//
+
+    let order               = document.querySelector('.order');
+    let orderArrowName      = order.querySelectorAll('.order_arrow');
+    let orderChoice         = order.querySelectorAll('.order_choice li');
+
     
 //SLIDER ARROWS - CLICK//
 function sliderArray() {
@@ -87,61 +94,23 @@ pricingPlan();
      
 
 //ORDER//
+function orderBox() {
+     orderArrowName.forEach(function (item, index, ){
+      item.addEventListener("click", function(){
+        item.nextElementSibling.classList.toggle('showList');
 
-let order               = document.querySelector('.order');
+            orderChoice.forEach(function (item, index, ){
+            item.addEventListener("click", function(){
+                console.log("dsaf")
+                item.parentElement.parentElement.children[0].textContent = this.textContent;
+                item.parentElement.classList.remove('showList'); 
+              });
+           });
+        })
+     }
+)}
+orderBox();
 
-let orderArrowName    = order.querySelector('.order_arrow.order_name');
-let orderName          = order.querySelector('.order_name');
-
-let orderArrowColor   = order.querySelector('.order_arrow.order_color');
-let orderColor         = order.querySelector('.order_color');
-
-let orderArrowFabric  = order.querySelector('.order_arrow.order_fabric');
-let orderFabric        = order.querySelector('.order_fabric');
-
-let orderChoice        = order.querySelector('.order_choice');
-let orderChoiceLi     = order.querySelectorAll('li');
-
-
-
- orderArrowName.addEventListener('click', function() {
-        this.nextElementSibling.classList.toggle('showList');
-        for (let i = 0; i < this.nextElementSibling.children.length; i++) {
-            this.nextElementSibling.children[i].addEventListener('click', function() {
-                orderName.textContent = this.textContent;
-                this.parentElement.classList.remove('showList');
-            });
-        }
-    });
-
- orderArrowColor.addEventListener('click', function() {
-        this.nextElementSibling.classList.toggle('showList');
-        for (let i = 0; i < this.nextElementSibling.children.length; i++) {
-            this.nextElementSibling.children[i].addEventListener('click', function() {
-                orderColor .textContent = this.textContent;
-                this.parentElement.classList.remove('showList');
-            });
-        }
-    });
-
-
- orderArrowFabric.addEventListener('click', function() {
-        this.nextElementSibling.classList.toggle('showList');
-        for (let i = 0; i < this.nextElementSibling.children.length; i++) {
-            this.nextElementSibling.children[i].addEventListener('click', function() {
-                orderFabric.textContent = this.textContent;
-                this.parentElement.classList.remove('showList');
-            });
-        }
-    });
-
-
-
-
-
-
-
-
-
+ 
 
 });
