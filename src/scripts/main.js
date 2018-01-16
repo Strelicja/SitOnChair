@@ -1,15 +1,25 @@
 //
 document.addEventListener("DOMContentLoaded", function() {
-    var arrowLeft          = document.querySelector('.arrow_left');
-    var arrowRight         = document.querySelector('.arrow_right');
-    var chairsImg          = document.querySelectorAll('.slider_img ul li'); 
-    var chairsImgTouch    = document.querySelectorAll('.slider_img ul li img'); 
+    //SLIDER ARROWS - CLICK//
+    let arrowLeft          = document.querySelector('.arrow_left');
+    let arrowRight         = document.querySelector('.arrow_right');
+    let chairsImg          = document.querySelectorAll('.slider_img ul li'); 
+    let chairsImgTouch    = document.querySelectorAll('.slider_img ul li img'); 
 
-    var index               = 0;
+     //BURGER MENU //
+    let hoverA              = document.querySelector(".hover");
+    let nav                 = document.querySelector ("nav");
+    let burger              = document.querySelector (".burger");   
 
-    chairsImg[index].style.display = "initial";
+    // PRICING //
+    let addPlan            = document.querySelectorAll('.pricing_button_a');
+    let addPrice           = document.querySelectorAll('.pricing_h1');
+    let orderPricing       = document.querySelector('.order_pricing .order_kind');
+    
 //SLIDER ARROWS - CLICK//
-
+function sliderArray() {
+    let index               = 0;
+    chairsImg[index].style.display = "initial";
     arrowLeft.addEventListener("click", function() {
         chairsImg[index].style.display = "none";
         index--;
@@ -40,13 +50,14 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('sdf')
         })
     })
+}
+sliderArray();  
+
 
 //BURGER MENU //
-let hoverA              = document.querySelector(".hover");
-let nav                 = document.querySelector ("nav");
-let burger              = document.querySelector (".burger");
 
-burger.addEventListener("click", function(){
+function burgerMenu() {
+    burger.addEventListener("click", function(){
     burger.classList.toggle("on");
     nav.classList.toggle("nav_mobile");
     if (nav.classList.contains("hidden-xs")  ) {
@@ -57,32 +68,20 @@ burger.addEventListener("click", function(){
          nav.classList.add("hidden-xs");
           hoverA.classList.remove("arrowDown");   
       }   
-})
+    })
 
     hoverA.addEventListener("click", function(){
             hoverA.classList.remove("arrowDown");   
- 
  });
+}
+burgerMenu();
 
 // PRICING //
 
-let addPlan            = document.querySelectorAll('.pricing_button_a');
-let addPrice           = document.querySelectorAll('.pricing_h1');
-let orderPricing       = document.querySelector('.order_pricing .order_kind');
+// let addPlan            = document.querySelectorAll('.pricing_button_a');
+// let addPrice           = document.querySelectorAll('.pricing_h1');
+// let orderPricing       = document.querySelector('.order_pricing .order_kind');
 
- // add_plan.addEventListener('click', function() {
- //        order_pricing.textContent = add_price.textContent; 
- //    });
- console.log(addPrice)
-
-        
-addPlan.forEach(function (index){
-  index.addEventListener("click", function(){
-  
-    orderPricing.textContent = addPrice.textContent;
-  console.log(this)
-  });
-});
 
 
 //ORDER//

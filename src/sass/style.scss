@@ -77,12 +77,12 @@ nav > ul > li a:hover,
 
 .arrowDown:after {
   content: "↓";
-  color: white;
+  color: #27c7ab;
   margin-left: 5px;
 }
 .arrowUp:after {
   content: "↑";
-  color: white;
+  color: #27c7ab;
   margin-left: 5px;
 }
 nav {
@@ -730,8 +730,8 @@ button.burger {
       height:4px;
       border-radius:100px;
       position:absolute;
-      left:0px;
-      background:#923cbe;
+      left:0px;  
+      background:#27c7ab;
       transform:rotate(0deg);
       transition: all 0.4s;
     }
